@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Mail, Phone, Linkedin, Github, MapPin, Copy, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { useToast } from "@/hooks/use-toast";
 
 const HeroSection = () => {
@@ -26,6 +27,20 @@ const HeroSection = () => {
     <section className="min-h-screen flex items-center justify-center px-6 py-20 scroll-snap-align-start">
       <div className="container mx-auto max-w-6xl text-center">
         <div className="space-y-8 animate-fade-in-up">
+          {/* Profile Photo */}
+          <div className="flex justify-center mb-8">
+            <Avatar className="h-32 w-32 md:h-40 md:w-40 border-4 border-primary/20 shadow-lg hover:scale-105 transition-transform duration-300">
+              <AvatarImage 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                alt="Kamal Mannava"
+                className="object-cover"
+              />
+              <AvatarFallback className="text-2xl md:text-3xl font-bold bg-primary text-primary-foreground">
+                KM
+              </AvatarFallback>
+            </Avatar>
+          </div>
+
           {/* Name with typewriter effect */}
           <div className="relative">
             <h1 className="text-6xl md:text-8xl font-bold text-gradient mb-4 overflow-hidden whitespace-nowrap animate-typewriter">
