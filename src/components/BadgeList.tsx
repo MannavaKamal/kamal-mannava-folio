@@ -13,7 +13,7 @@ const BadgeList = () => {
     <section className="py-32 px-6">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Certifications</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Certifications1</h2>
           <p className="text-xl text-muted-foreground">Official credentials then back my skills.</p>
         </div>
 
