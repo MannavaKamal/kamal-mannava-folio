@@ -14,7 +14,7 @@ const CallToActionBanner = () => {
           <div className="space-y-6">
             <h2 className="text-4xl md:text-6xl font-bold">Let's Connect! 🚀</h2>
             <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl mx-auto leading-relaxed">
-              Have an opportunity or idea? I'm just one message away.
+              Have an opportunity or idea? I'm just one message away in the room.
             </p>
           </div>
 

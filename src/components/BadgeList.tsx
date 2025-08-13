@@ -14,7 +14,7 @@ const BadgeList = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Certifications</h2>
-          <p className="text-xl text-muted-foreground">Official credentia tha back my skills.</p>
+          <p className="text-xl text-muted-foreground">Official credentials then back my skills.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
