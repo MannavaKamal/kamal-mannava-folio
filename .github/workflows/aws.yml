@@ -27,16 +27,6 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Run commands on EC2
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
-             cd /home/ec2-user/deploy
-             npm run dev  
-
       - name: Deploy to EC2
         uses: appleboy/scp-action@master
         with:
@@ -46,15 +36,7 @@ jobs:
           source: "."
           target: "/home/ec2-user/deploy"
 
-      - name: Run commands on EC2
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
-             cd /home/ec2-user/deploy
-             npm run dev
+      
           
 
 
